@@ -86,8 +86,8 @@ int ReadFromFile(){
 void CheckAll(){
     for(int i=0;i<8;i++){
         for(int j=0;j<8;j++){
-            if(Mas[i][j]!=NULL)
-                Mas[i][j]->check_capture();
+            if(Mas[j][i]!=NULL)
+                Mas[j][i]->check_capture();
         }
     }
 }

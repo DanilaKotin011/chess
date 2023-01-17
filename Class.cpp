@@ -26,12 +26,11 @@ void King::check_capture(){
     for(int j=pos_x-1;j<=pos_x+1;j++){
         for(int i=pos_y-1;i<=pos_y+1;i++){
             if(i>=0 && i<=7 && j>=0 && j<=7){
-                if(!(i==pos_x && j==pos_y)){
-                    if(Mas[i][j]!=NULL){
-                	    cout<<this->get_name()<<" on "<<this->get_x()<<" "<<this->get_y()<<" capture "<<Mas[i][j]->get_name()<<" on "<<Mas[i][j]->get_x()<<" "<<Mas[i][j]->get_y()<<endl;
+                if(j!=pos_x || i!=pos_y){
+                    if(Mas[j][i]!=NULL){
+                	    cout<<this->get_name()<<" on "<<this->get_x()<<" "<<this->get_y()<<" capture "<<Mas[j][i]->get_name()<<" on "<<Mas[j][i]->get_x()<<" "<<Mas[j][i]->get_y()<<endl;
             	    }
-                }
-                
+                }    
         	}
     	}
 	}
