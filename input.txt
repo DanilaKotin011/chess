@@ -1,0 +1,9 @@
+knight 3 3
+queen 3 2
+queen 1 4
+queen 5 4
+queen 5 5
+queen 2 1
+queen 4 1
+queen 2 5
+queen 4 5
